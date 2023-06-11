@@ -527,6 +527,8 @@ h5 {
   cursor: pointer;
   fill: #ffffff;
   background: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-heading {
@@ -621,6 +623,8 @@ h5 {
 .card-set-images:hover .overlay {
   transform: translateY(0);
   transition: 250ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clienti {
