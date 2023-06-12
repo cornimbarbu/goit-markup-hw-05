@@ -37,7 +37,6 @@ li {
   background: #ffffff;
   margin: 0 auto;
   justify-content: center;
-  width: 1600px;
   height: 80px;
   border: 1px solid #ececec;
 }
@@ -195,7 +194,7 @@ li {
 
 .dark-footer {
   background: var(--dark-section);
-  width: 1600px;
+
   margin: 0 auto;
 }
 
@@ -340,7 +339,6 @@ h5 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -425,7 +423,6 @@ h5 {
 
 .team-section {
   background: var(--team-section-color);
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -628,7 +625,6 @@ h5 {
 }
 
 .clienti {
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -740,7 +736,6 @@ address {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1600px;
   height: 1024px;
   background: #00000033;
   visibility: hidden;
