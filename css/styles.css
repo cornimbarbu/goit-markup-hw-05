@@ -182,14 +182,14 @@ li {
 /*Sections*/
 
 .dark-section {
-  width: 1600px;
-  height: 600px;
-  margin: 0 auto;
-  background: url("../images/title.jpg") rgba(47, 48, 58, 0.4);
+  background: var(--dark-section);
 }
 
-.dark-section {
-  background-position: auto auto;
+.hero-background {
+  height: 600px;
+  background: url("../images/title.jpg") rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .dark-footer {
@@ -259,11 +259,6 @@ h5 {
   margin-top: 0;
 }
 
-.service-button {
-  padding-left: 500px;
-  padding-bottom: 200px;
-}
-
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -277,9 +272,11 @@ h5 {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  margin-left: 500px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   text-decoration: underline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,37 +730,47 @@ address {
 /*Modal*/
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
-  height: 1024px;
-  background: #00000033;
-  visibility: hidden;
-}
-.modal {
-  position: absolute;
-  left: 536px;
-  top: 221px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.modal-content {
+.modal {
+  position: relative;
+  padding: 16px;
   background: #ffffff;
   width: 528px;
   height: 581px;
+  margin: 0 auto;
+  height: 500px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.modal-content button {
-  margin-top: 8px;
-  margin-right: 8px;
-}
-
-.is-hiden {
+.is-hidden {
+  transform: scale(1.1);
   visibility: hidden;
 }
 
-.close {
+.close-btn {
   float: right;
+  margin: 8px 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
